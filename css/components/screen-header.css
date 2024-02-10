@@ -1,8 +1,10 @@
 .screen-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
+    margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -12,4 +14,19 @@
 
 .screen-header__icons span {
     margin-left: 25px;
+}
+
+.dot {
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    background: tomato;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
 }
