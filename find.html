@@ -8,26 +8,25 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="status-bar">
-      <div class="status-bar__column">
-          <span>No Service</span>
-          <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-          <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-          <span>110%</span>
-          <i class="fas fa-battery-full fa-lg"></i>
-          <i class="fas fa-bolt"></i>
-      </div>
-  </div>
-
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>New York</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>12:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
   <header class="screen-header">
       <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span><a href="settings.html"><i style="color: var(--deep-green);" class="fas fa-cog fa-lg"></i></a></span>
             <span class="dot"></span>
       </div>
   </header>
@@ -53,7 +52,39 @@
     </div>
     <div class="recommended-friends">
         <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
+        <div class="user-component">
+            <!--friends1-->
+            <div class="user-component__column">
+              <img
+                src="img/janice.jpg"
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  Janice
+                </h4>
+              </div>
+            </div>
+        <div class="user-component">
+            <!--friends2-->
+          <div class="user-component__column">
+            <img
+              src="img/carol.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Carol
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column user-component__column-friends">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
     </div>
     <div class="open-chat">
         <div class="open-chat__header">
@@ -62,18 +93,18 @@
         </div>
         <div class="open-post">
             <div class="open-post__column">
-                <h5 class="open-post__title">#BTS</h5>
-                <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                <h5 class="open-post__title">Central Perk</h5>
+                <h6 class="open-post__hashtags">#centralPerk #reservation</h6>
                 <div class="open-post__members">
-                    <img src="https://avatars3.githubusercontent.com/u/3612017"/>
-                    <span class="open-post__member-count">802 members</span>
+                    <img src="img/gunther.jpg"/>
+                    <span class="open-post__member-count">50 members</span>
                     <div class="divider"></div>
                     <span class="open-post__member-status">Active</span>
                 </div>
             </div>
             <div class="open-post__column">
                 <div class="open-post__photo">
-                    <img src="https://avatars3.githubusercontent.com/u/3612017">
+                    <img src="img/centralperk.jpg">
                     <div class="open-post__heart-count">
                         <i class="fas fa-heart fa-xs"></i>
                         <span>326</span> 
@@ -93,7 +124,7 @@
           </li>
           <li class="nav__btn">
               <a class="nav__link" href="chats.html">
-                  <span class="nav__notification badge">1</span>
+                  <span class="nav__notification badge">2</span>
                   <i class="far fa-comment fa-2x"></i>
               </a>
           </li>
@@ -110,6 +141,11 @@
           </li>
       </ul>
   </nav>
+
+  <div id="no-mobile">
+    <span>Your screen is too big</span>
+  </div>
+  
   <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

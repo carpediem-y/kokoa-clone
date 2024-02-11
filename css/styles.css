@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
 
 @import "reset.css";
 @import "variables.css";
@@ -12,6 +13,7 @@
 @import "components/badge.css";
 @import "components/icon-raw.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /*Screens*/
 @import "screens/login.css";
@@ -28,7 +30,9 @@
 body {
     background-color: white; 
     color: #2e363e;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    overflow: hidden;
 }
 
 .main-screen {

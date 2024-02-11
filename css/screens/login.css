@@ -7,19 +7,25 @@
     font-weight: 600;
 }
 
+.welcome-header img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
 .welcome-header__title {
-    margin-bottom: 20px;
     font-size: 25px;
+    color: var(--deep-green);
 }
 
 .welcome-header__text {
     width: 60%;
-    opacity: 0.7;
 }
+
 #login-form {
     display: flex;
     flex-direction: column;
-    margin: 0px 30px;
+    margin: -40px 30px;
 }
 
 #login-form input {
@@ -39,15 +45,16 @@
 }
 
 #login-form input:focus {
-    border-color: var(--yellow);
+    border-color: var(--green);
 }
 
 #login-form input[type="submit"] {
-    background-color: var(--yellow);
-    border-radius: 5px;
+    background-color: var(--green);
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     padding: 20px 0px;
+    color: white;
 }
 
 #login-form a {

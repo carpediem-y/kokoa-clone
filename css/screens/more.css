@@ -1,15 +1,16 @@
 .more-screen .icon-row {
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .more-suggestions {
-    margin-top: 50px;
+    margin-top: 40px;
     border-top: var(--main-border);
     padding-top: 40px;
 }
 
 .more-suggestions__title {
     margin-bottom: 30px;
+    color: var(--deep-green);
 }
 
 .more-suggestions__icons {
@@ -26,7 +27,7 @@
 .more-suggestions__icon-image {
     width: 60px;
     height: 60px;
-    background-color: var(--yellow);
+    background-color: var(--green);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -37,4 +38,10 @@
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+
+.more-suggestions__icon-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
 }
